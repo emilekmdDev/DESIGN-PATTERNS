@@ -1,6 +1,7 @@
+package CONSTRUCTION.FACTORY.methode1;
+
 public class Client {
     public static void main(String[] args) {
-        ProduitA produitA = null;
         ProduitFactory produitFactory = new ProduitFactory();
 
         ProduitA p1 = produitFactory.getProduitA(ProduitFactory.typeProduitA1);

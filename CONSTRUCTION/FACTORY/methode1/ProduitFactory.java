@@ -1,3 +1,5 @@
+package CONSTRUCTION.FACTORY.methode1;
+
 public class ProduitFactory {
     public static final int typeProduitA1 = 1;
     public static final int typeProduitA2 = 2;

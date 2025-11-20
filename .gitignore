@@ -1,0 +1,43 @@
+# Fichiers de compilation Java et sorties
+# ------------------------------------
+*.class
+# Les fichiers jar, war, ear, etc. générés par la compilation (si applicable)
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+# Répertoires de sortie de compilation standard (si applicable, ex: Maven, Gradle)
+/bin/
+/build/
+/target/
+/out/
+
+# Fichiers et dossiers spécifiques à IntelliJ IDEA
+# --------------------------------------------
+.idea/         # Dossier des paramètres du projet IntelliJ
+*.iml          # Fichiers de module IntelliJ (fichiers de configuration spécifiques à l'IDE)
+*.ipr          # Fichiers de projet IntelliJ
+*.iws          # Fichiers d'espace de travail IntelliJ
+# Historique local de l'IDE
+.history/
+
+# Fichiers et dossiers spécifiques à VS Code
+# ----------------------------------------
+.vscode/       # Dossier des paramètres de l'espace de travail VS Code (contient souvent des paramètres utilisateur ou de débogage qui ne doivent pas être partagés)
+# Excepté les fichiers de configuration utiles au projet, comme extensions.json ou settings.json
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Fichiers système et temporaires courants
+# --------------------------------------
+# Fichiers temporaires du système d'exploitation
+.DS_Store      # macOS
+Thumbs.db      # Windows
+# Fichiers journaux (logs)
+*.log
+# Fichiers d'aide à la détection de vulnérabilités etc. (si générés localement)
+*.hprof
+*.ser
+# Fichiers de configuration d'environnement local
+.env
