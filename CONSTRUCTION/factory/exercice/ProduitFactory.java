@@ -1,4 +1,4 @@
-package CONSTRUCTION.FACTORY.exercice;
+package CONSTRUCTION.factory.exercice;
 
 public abstract class ProduitFactory {
     protected abstract ProduitA createProduit();

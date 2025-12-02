@@ -1,4 +1,4 @@
-package CONSTRUCTION.FACTORY.methode2;
+package CONSTRUCTION.factory.methode2;
 
 public class Client {
     static void main() {

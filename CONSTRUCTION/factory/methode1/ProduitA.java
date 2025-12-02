@@ -1,4 +1,4 @@
-package CONSTRUCTION.FACTORY.methode1;
+package CONSTRUCTION.factory.methode1;
 
 public abstract  class ProduitA {
     public abstract void methodeA();

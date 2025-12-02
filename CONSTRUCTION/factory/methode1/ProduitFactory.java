@@ -1,4 +1,4 @@
-package CONSTRUCTION.FACTORY.methode1;
+package CONSTRUCTION.factory.methode1;
 
 public class ProduitFactory {
     public static final int typeProduitA1 = 1;

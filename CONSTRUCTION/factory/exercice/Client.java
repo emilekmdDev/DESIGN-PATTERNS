@@ -1,4 +1,4 @@
-package CONSTRUCTION.FACTORY.exercice;
+package CONSTRUCTION.factory.exercice;
 
 public class Client {
     static void main() {
