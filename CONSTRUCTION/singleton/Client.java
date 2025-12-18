@@ -3,11 +3,11 @@ package CONSTRUCTION.singleton;
 public class Client {
     static void main() {
 
-        Singleton singleton = Singleton.getInstance(1,2,"emile");
+        Singleton singleton = Singleton.getSingleton(3,4, "emile");
 
-        singleton.afficher();
+        singleton.affiche();
+        System.out.println("la somme est :" + Singleton.getSingleton().somme(5,5));
+        System.out.println("la moyenne est :" + Singleton.getSingleton().moyenne(5,5));
 
-        System.out.printf("la somme est %d \n",Singleton.getInstance().somme(1,2));
-        System.out.printf("la moyenne est %d",Singleton.getInstance().moyenne(5,15));
     }
 }

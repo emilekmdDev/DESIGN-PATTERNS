@@ -11,52 +11,42 @@ public final class Singleton {
         super();
     }
 
-    public Singleton(int x, int y){
+    private Singleton(int x, int y){
         this.x=x;
         this.y=y;
     }
 
-    public Singleton(int x, int y, String nom) {
-        this.x = x;
-        this.y = y;
-        this.nom = nom;
+    private Singleton(int x, int y, String nom){
+        this.x=x;
+        this.y=y;
+        this.nom=nom;
     }
 
-    public static Singleton getInstance(){
-        if (instance==null){
-            instance = new Singleton();
+    public static Singleton getSingleton(){
+        if (instance!=null){
+            return instance;
         }
-        return instance;
+        return new Singleton();
     }
 
-    public static Singleton getInstance(int x, int y){
-        if (instance==null){
-            instance = new Singleton(x, y);
+    public static Singleton getSingleton(int x, int y){
+        if (instance!=null){
+            return instance;
         }
-        return instance;
+        return new Singleton(x,y);
     }
 
-    public static Singleton getInstance(int x, int y, String nom){
-        if (instance==null){
-            instance = new Singleton(x, y, nom);
+    public static Singleton getSingleton(int x, int y, String nom){
+        if (instance!=null){
+            return instance;
         }
-        return instance;
+        return new Singleton(x, y, nom);
     }
 
-    public int somme(int x, int y){
-        return  x+y;
-    }
-
-    public int moyenne(int x, int y){
-        return somme(x,y)/2;
-    }
-
-    public void afficher(){
-        System.out.println("je suis une instance unique et mes valeurs sont:\n" +
-                "x = "+this.x+"\n"+
-                "y = "+this.y+"\n"+
-                "nom = "+this.nom+"\n"
-        );
+    public int somme(int x, int y){ return x+y;}
+    public int moyenne(int x, int y){ return somme(x,y)/2;}
+    public void affiche(){
+        System.out.println("je suis une instance et mes valeurs sont x:" +x+ " y: " +y+ " nom:"+nom);
     }
 
     @Override
