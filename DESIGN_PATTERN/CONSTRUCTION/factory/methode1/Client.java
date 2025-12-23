@@ -1,0 +1,13 @@
+package DESIGN_PATTERN.CONSTRUCTION.factory.methode1;
+
+public class Client {
+    public static void main(String[] args) {
+        ProduitFactory produitFactory = new ProduitFactory();
+
+        ProduitA p1 = produitFactory.getProduitA(ProduitFactory.typeProduitA1);
+        ProduitA p2 = produitFactory.getProduitA(ProduitFactory.typeProduitA2);
+
+        p1.methodeA();
+        p2.methodeA();
+    }
+}
