@@ -1,0 +1,10 @@
+package SOLID_PRINCIPLES.SRP.corrigé;
+
+public class BookBusinessLiogic {
+    public void emprunter(BookSRP book, String lecteur){
+        System.out.println("\nEmprunt du livre '" + book.getTitle() + "' par " + lecteur);
+    }
+    public void autreService(BookSRP book){
+        System.out.println("\nAutre logique métier sur le livre '" + book.getTitle());
+    }
+}
